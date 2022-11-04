@@ -7,4 +7,9 @@ var referesh = function() {
     var currentClicks = localStorage.getItem("cowclicks")
     document.getElementById("clicks").textContent = currentClicks;
 }
+while (true) {
+    if (localStorage.getItem("cowclicks") == NaN) {
+        localStorage.setItem("cowclicks", 0)
+    }
+}
 setInterval(referesh,0.1)
