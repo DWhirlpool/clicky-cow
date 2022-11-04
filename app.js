@@ -3,7 +3,7 @@ var cowclicks = parseInt(localStorage.getItem("cowclicks"));
 var cowclick = function() {
     parseInt(cowclicks += 1)
     localStorage.setItem("cowclicks", cowclicks)
-    if (localStorage.getItem("cowclicks") == NaN) {
+    if (localStorage.getItem("cowclicks") === NaN) {
         localStorage.setItem("cowclicks", 0)
         console.log(test)
     }
