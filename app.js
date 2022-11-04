@@ -1,5 +1,5 @@
 var cowname = "Clicky";
-var cowclicks = parseInt(localStorage.getItem("cowclicks"));
+var cowclicks = localStorage.getItem("cowclicks")
 var cowclick = function() {
     parseInt(cowclicks += 1)
     localStorage.setItem("cowclicks", cowclicks)
