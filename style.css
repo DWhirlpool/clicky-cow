@@ -2,7 +2,7 @@ body {
     font-family: sans-serif;
 }
 
-#cow {
+#cow:hover {
     animation-name: pop;
     animation-duration: 1s;
 }
