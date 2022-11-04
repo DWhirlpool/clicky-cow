@@ -1,7 +1,6 @@
 var cowname = "Clicky";
-var cowclicks = 0
+var cowclicks = 1
 var cowclick = function() {
-    parseInt(cowclicks = cowclicks + 1)
     localStorage.setItem("cowclicks", parseInt(localStorage.getItem("cowclicks")) + cowclicks)
 }
 var referesh = function() {
